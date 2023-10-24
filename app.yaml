@@ -1,0 +1,14 @@
+runtime: nodejs20
+
+
+handlers:
+  - url: /.*
+    script: auto
+
+  - url: /.*
+    script: auto
+    secure: always
+    redirect_http_response_code: 301
+
+  - url: (www\.)?kevinsfunzone\.com/.*
+    script: auto

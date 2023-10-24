@@ -1,0 +1,19 @@
+/* desktop screens */
+@media (min-width: 769px) {
+    .mobile {
+        display: none !important; /* Hide on screens with width 769px and above (desktop screens) */
+    }
+    
+}
+
+/* mobile devices */
+@media (max-width: 768px) {
+    .desktop {
+        display: none !important; /* Hide on mobile */
+    }
+}
+
+/*---------- all styles ----------*/
+body {
+    background-image: url('https://i.gifer.com/146u.gif');
+}

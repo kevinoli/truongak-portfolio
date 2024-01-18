@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../css/Header.css';
 
 const fonts = [
 	'Comic Sans MS, sans-serif',
@@ -31,8 +32,7 @@ const getRandomFont = () => {
 
 const randomizeCapitalization = (text) => {
 	return text.split('').map((letter, index) => {
-		// Randomly decide whether to capitalize the letter
-		const shouldCapitalize = Math.random() < 0.5; // Adjust the threshold as needed
+		const shouldCapitalize = Math.random() < 0.5;
 		return (
 			<span
 				key={index}
@@ -48,18 +48,27 @@ const randomizeCapitalization = (text) => {
 };
 
 const Header = () => {
+	const [isMenuOpen, setMenuOpen] = useState(false);
+
+	const toggleMenu = () => {
+		setMenuOpen(!isMenuOpen);
+	};
+
 	return (
-		<div className="display-1 text-center pt-5 fw-bold">
-			<div className="mobile display-1">
-				{randomizeCapitalization("kevin's")}
-				<br></br>
-				{randomizeCapitalization("awesome")}
-				<br></br>
-				{randomizeCapitalization("funzone")}
-			</div>
-			<div className="desktop">
-				{randomizeCapitalization("kevin's awesome funzone")}
-			</div>
+		<div className="">
+			<nav>
+				<span className="brand"><img src="icon_white.png" alt="icon" width="50"/></span>
+				<div className="menu-btn" onClick={toggleMenu}>{isMenuOpen ? '' : 'menu'}</div>
+
+				<ul className={`${isMenuOpen ? 'mobile-menu' : 'menu'}`}>
+				{/* <ul className='mobile-menu'> */}
+					<li><a href="/">{randomizeCapitalization('home')}</a></li>
+					<li><a href="/">{randomizeCapitalization('art')}</a></li>
+					<li><a href="/">{randomizeCapitalization('about me')}</a></li>
+					<li><a href="/">{randomizeCapitalization('contact')}</a></li>
+					{isMenuOpen && <li onClick={toggleMenu}>{randomizeCapitalization('x')}</li>}
+				</ul>
+			</nav>
 		</div>
 	);
 };

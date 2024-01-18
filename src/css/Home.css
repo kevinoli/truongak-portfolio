@@ -1,0 +1,22 @@
+
+.dupe {
+    font-size: 60px;
+    color: #0f0f0f;
+    line-height: 80px;
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 1px;
+    animation-name: expand;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes expand {
+    from {
+        line-height: 0px;
+    }
+    to {
+        line-height: 80px;
+    }
+}

@@ -1,8 +1,9 @@
 
 .dupe {
-    font-size: 60px;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
     color: #0f0f0f;
-    line-height: 80px;
     -webkit-text-stroke: white;
     -webkit-text-stroke-width: 1px;
     animation-name: expand;
@@ -13,10 +14,13 @@
 
 
 @keyframes expand {
-    from {
+    0% {
         line-height: 0px;
     }
-    to {
+    80% {
         line-height: 80px;
+    }
+    100% {
+        line-height: 50px;
     }
 }

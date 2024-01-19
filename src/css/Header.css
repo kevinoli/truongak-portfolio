@@ -47,6 +47,7 @@ nav .brand img:hover {
 		transform: scale(2);
 	}
 }
+
 /*--------------- desktop --------------- */
 @media (min-width: 769px) {
 	.menu-btn {
@@ -59,7 +60,7 @@ nav .brand img:hover {
 		right: 80px;
 		position: absolute;
 	}
-
+	
 	nav .menu li {
 		overflow: visible;
 		display: inline-block;
@@ -69,12 +70,13 @@ nav .brand img:hover {
 		position: relative;
 		transition: all 0.3s ease-out;
 	}
-
+	
 	nav .menu li span {
 		font-weight: 700;
 	}
-
+	
 	nav .menu li a {
+		background-color: rgba(15, 15, 15, 0);
 		padding: 0 20px;
 		text-decoration: none;
 		display: inline-block;

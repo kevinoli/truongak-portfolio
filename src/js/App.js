@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import Home from './Home';
+import About from './About';
 // import Projects from './Projects';
-// import About from './About';
 // import Contact from './Contact';
 import '../css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,13 +15,12 @@ function App() {
 	};
   
 	const content =
-	  selectedTab === 'home' ? <Home /> : null;
+	  selectedTab === 'home' ? <Home /> : 'about me' ? <About /> : null;
 	  // Add other Tabs as needed
   
 	return (
 	  <div>
 		<Header onSelectTab={handleTabChange} />
-		{/* Navigation component here, pass onSelectTab to handle Tab changes */}
 		{content}
 	  </div>
 	);

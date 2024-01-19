@@ -63,7 +63,6 @@ const Header = () => {
 				<ul className={`${isMenuOpen ? 'mobile-menu' : 'menu'}`}>
 				{/* <ul className='mobile-menu'> */}
 					<li><a href="/">{randomizeCapitalization('home')}</a></li>
-					<li><a href="/">{randomizeCapitalization('art')}</a></li>
 					<li><a href="/">{randomizeCapitalization('about me')}</a></li>
 					<li><a href="/">{randomizeCapitalization('contact')}</a></li>
 					{isMenuOpen && <li onClick={toggleMenu}>{randomizeCapitalization('x')}</li>}

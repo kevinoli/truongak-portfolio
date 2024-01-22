@@ -1,30 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';  
 import Header from './Header';
 import Home from './Home';
 import About from './About';
 // import Projects from './Projects';
 // import Contact from './Contact';
 import '../css/App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-	const [selectedTab, setSelectedTab] = useState('home');
-  
-	const handleTabChange = (Tab) => {
-	  setSelectedTab(Tab);
-	};
-  
-	const content =
-	  selectedTab === 'home' ? <Home /> : 'about me' ? <About /> : null;
-	  // Add other Tabs as needed
-  
+
 	return (
-	  <div>
-		<Header onSelectTab={handleTabChange} />
-		{content}
-	  </div>
+		<Router>
+			<div className="text-center">
+			<Header />
+			<Routes>  
+				<Route exact path='/' element={<Home />}></Route>  
+				<Route exact path='/about' element={<About />}></Route>
+			</Routes>  
+			</div>
+		</Router>
 	);
-  }
+}
 
 export default App;
-

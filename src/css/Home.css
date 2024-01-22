@@ -1,10 +1,14 @@
+.home {
+    /* padding-top: 75px; */
+    text-align: center;
+}
 
-.dupe {
+h1.dupe {
     font-size: 50px;
     font-weight: bold;
     line-height: 50px;
     color: #0f0f0f;
-    -webkit-text-stroke: white;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
     -webkit-text-stroke-width: 1px;
     animation-name: expand;
     animation-duration: 2s;
@@ -17,8 +21,8 @@
     0% {
         line-height: 0px;
     }
-    80% {
-        line-height: 80px;
+    85% {
+        line-height: 100px;
     }
     100% {
         line-height: 50px;

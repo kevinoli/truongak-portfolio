@@ -4,8 +4,8 @@ import '../css/Home.css';
 
 function Home() {
 	return (
-		<div className="text-center">
-			<h1 className="dupe pt-5">
+		<div className="home">
+			<h1 className="dupe">
 				hello and welcome to my portfolio webpage!! <br/>
 				hello and welcome to my portfolio webpage!! <br/>
 				hello and welcome to my portfolio webpage!! <br/>

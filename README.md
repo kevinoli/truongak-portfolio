@@ -9,10 +9,6 @@
 
 <br/>
 
-## TL;DR
-
-You can fork this if you want to use any of the elements! If you wanna give me credit link [kevinoli](https://github.com/kevinoli/truongak-portfolio)
-
 ## Built With
 
 This project was built using these technologies.
@@ -42,3 +38,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Open the project folder and Navigate to `/src/`. <br/>
 You will find all the components used and you can edit your information accordingly.
+
+You can fork this if you want to use any of the elements! If you wanna give me credit link [kevinoli](https://github.com/kevinoli/truongak-portfolio)

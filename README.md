@@ -17,10 +17,15 @@ You can fork this if you want to use any of the elements! If you wanna give me c
 
 This project was built using these technologies.
 
+- HTML
+- CSS
+- Javascript
 - React.js
 - Node.js
-- CSS3
-- VsCode
+- Google Cloud Run
+- Cloudflare DNS
+- Docker
+
 
 ## Getting Started
 

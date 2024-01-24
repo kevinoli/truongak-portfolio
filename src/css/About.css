@@ -1,0 +1,28 @@
+.about {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+.text-and-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.text,
+.photo {
+    flex: 1;
+}
+
+/* To alternate layout, you can use nth-child(odd) or nth-child(even) selectors */
+.text-and-photo:nth-child(odd) .text {
+    order: 2;
+}
+
+.text-and-photo:nth-child(odd) .photo {
+    order: 1;
+}

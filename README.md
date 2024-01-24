@@ -4,7 +4,7 @@
   <a href="https://kevinatruong.com/" target="_blank">kevinatruong.com</a>
 </h2>
 <div align="center">
-  <img alt="potfolio homepage" src="./images/portfolio_image.png" />
+  <img alt="potfolio homepage" src="./images/portfolio_homepage.png" />
 </div>
 
 <br/>

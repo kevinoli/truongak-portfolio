@@ -64,7 +64,7 @@ const randomizeCapitalizationAndFont = (text) =>
 	};
   
 	return (
-	  <div className="">
+	  <div className="header">
 		<nav>
 		  <span className="brand"><img src="icon_white.png" alt="icon" width="50"/></span>
   

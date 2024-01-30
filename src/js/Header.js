@@ -74,6 +74,7 @@ const randomizeCapitalizationAndFont = (text) =>
 			<li onClick={toggleMenu}><Link to="/">{randomizeCapitalizationAndFont('home')}</Link></li>
 			<li onClick={toggleMenu}><Link to="/about">{randomizeCapitalizationAndFont('about')}</Link></li>
 			<li onClick={toggleMenu}><Link to="/contact">{randomizeCapitalizationAndFont('contact')}</Link></li>
+			<li onClick={toggleMenu}><Link to="/resume">{randomizeCapitalizationAndFont('resume')}</Link></li>
 			{ isMenuOpen && <li onClick={toggleMenu}>{randomizeCapitalizationAndFont('x')}</li>}
 		  </ul>
 		</nav>

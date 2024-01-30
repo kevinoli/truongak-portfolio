@@ -2,9 +2,8 @@
 
 nav {
 	width: 100%;
-	height: 100px;
+	height: 175px;
     font-size: 25px;
-	margin-bottom: 100px;
 }
 
 nav .brand {
@@ -124,7 +123,7 @@ nav .brand img:hover {
 		position: fixed;
 		flex-direction: column;
 		background-color: rgba(15, 15, 15, 0.9);
-		padding-top: 50%;
+		/* padding-top: 50%; */
 		width: 100%;
 		height: 100%;
 		transform: scaleY(1);

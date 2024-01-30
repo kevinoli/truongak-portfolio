@@ -13,7 +13,7 @@ const About = () => {
 			</div>
 			<div className="col-md-6">
 			{/* You can add an image of yourself here */}
-			<img src="path/to/your/image.jpg" alt="Your Name" className="img-fluid rounded-circle" />
+			<img src="img/kevin_alien.jpeg" alt="Your Name" className="img-fluid" />
 			</div>
 		</div>
 		</div>

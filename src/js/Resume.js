@@ -101,7 +101,7 @@ const Resume = () => {
                     <h4>Arduino Water Level Timer Tracker</h4>
                     <ul>
                         <li>Engineered Arduino-based device for real-time liquid level tracking, incorporating a self-made capacitance sensor, RGB LED screen, and a timer.</li>
-                        <li>Applied principles from both computer science and electrical engineering to combine electronic components and hardware with computer data structures and algorithms to develop an efficient and cohesive device.</li>
+                        <li>Applied principles from both computer science and electrical engineering to combine electronic components and hardware with data structures and algorithms to develop an efficient and cohesive device.</li>
                     </ul>
                     <br></br>
                 </div>
